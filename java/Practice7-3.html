@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let str = ['apple','banana','apple','orange','banana','apple','apple'];
+        // let count = 1;
+        // let new_str = [];
+        // new_str[0]=str[0];
+        // for(let i=0;i<str.length;i++){
+        //     for(let j=0;j<new_str.length;j++){
+        //         if(new_str[j]==str[i]){
+        //             break;
+        //         }
+        //         else if(j==new_str.length-1){
+        //             new_str[count]=str[i];
+        //             count++;
+        //         }
+        //     }
+        // }
+        // for(let i=0;i<new_str.length;i++){
+        //     document.write(new_str[i]+"&nbsp;");
+        // }
+        // document.write("<br>" + count);
+        let str = ['apple','banana','apple','orange','banana','apple','apple'];
+        let count = 0;
+        new_str = [];
+        let check
+        for(let i=0; i<str.length;i++){
+            check = false;
+            for(let j=0; j<str.length; j++){
+                if(str[i] == new_str[j]){
+                    check = true;
+                    break;
+                }
+            }
+            if(check == false){
+                new_str[count] =str[i];
+                count++;
+            }
+        }
+        document.write("과일 배열", new_str.join("&nbsp;&&nbsp;"),"<br>");
+        document.write("중복되지 않은 과일의 개수 : ", new_str.length);
+    </script>
+</body>
+</html>

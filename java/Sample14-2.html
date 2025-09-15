@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+    <style>
+        body{font-size: 1.5em;}
+        div{
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        let ties = ['원숭이띠', '닭띠', '개띠', '돼지띠', '쥐띠', '소띠', '범띠', '토끼띠', '용띠', '뱀띠', '말띠', '양띠'];
+        let colors = ['red', 'orange', 'yellow', 'green', 'blue', 'navy', 'purple', 'pink', 'brown', 'gray', 'white', 'black'];
+        let n=prompt("태어난 연도를 입력하시오", );
+        let rest = n%12;
+        let zodiac = ties[rest];
+        document.write(`<h3> ${n}년에 태어난 당신의 띠는 ${zodiac}입니다.</h3>`);
+
+        let color = colors[rest];
+        document.write(`<div style="background-color: ${color}; width: 300px; height: 30px;"> 행운의 색은 ${color} </div>`);
+    </script>
+
+</body>
+</html>

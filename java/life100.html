@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h3> 100점짜리 인생을 위한 단어 얻기</h3>
+    <hr>
+    <script>
+        for(let i=0; i<5;i++){
+            let words = prompt("100짜리 인생을 위한 단어 입력 ");
+            let tot = 0;
+            for(let j=0; j<words.length; j++){
+                tot += words.charCodeAt(j) - 96;
+            }
+            alert(`${words}의 정수는 ${tot}점 입니다.`);
+            document.write(`${words}의 점수는 ${tot}점 입니다. <br>`)
+        }
+        
+    </script>
+</body>
+</html>

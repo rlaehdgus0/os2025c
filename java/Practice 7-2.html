@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <h3>문자열 분할</h3>
+    <hr>
+    <script>
+        let s = prompt("문자열 입력");
+        let ns = String(s);
+        for(let i=0;i<ns.length;i++){
+            if(ns[i]=="&")
+                document.write("<br>");
+            else{
+                document.write(ns[i]);
+            }
+        }
+        // let str = prompt("&기호로 분리되는 문장을 입력 ");
+        // let arr = str.split("&");
+        // document.write("분리된 문장");
+        // for(let i=0; i<arr.length;i++){
+        //     document.write(arr[i],"<br>");
+        // }
+    </script>
+</body>
+</html>

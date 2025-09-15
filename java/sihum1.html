@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+    <style>
+        html, body { margin: 0; padding: 0; height: 100%; background-color: crimson;}
+        h3 {color: white;}
+        header { width: 100%; height: 15%; background: yellow; }
+        nav { width: 15%; height: 70%; float: left; background: orange; }
+        section { width: 70%; height: 70%; float: left; background: olivedrab; }
+        aside { width: 15%; height: 70%; float: left; background: orange; }
+        footer { width: 100%; height: 15%; clear: both; background: plum; }
+        hr{border: 10px solid aqua; }
+        span {color: wheat; font-size: 100px;}
+        body{margin-left: 30px; margin-right: 30px;}
+        /* *는 전체 */
+    </style>
+</head>
+<body>
+    <header>
+        머리말
+        <hr>
+        <form name="fo" method="get">
+            <fieldset>
+                <legend>그룹 박스</legend>
+                사용자 ID: <input type="text" size="15" value=""><br>
+                비밀 번호: <input type="password" size="15" value="">
+                <input type="submit" value="완료">
+            </fieldset>
+        </form>
+    </header>
+    <nav>
+        목차
+        <input type="text" list="countries">
+        <datalist id="countries">
+            <option value="이것은"></option>
+            <option value="선택지"></option>
+            <option value="만든다"></option>
+        </datalist>
+    </nav>
+    <section>본문 
+        <article>
+            <h3>절</h3>
+            <details>
+                <summary>제목</summary>
+                <p><span style="color: aquamarine;">내용(숨기기 가능)
+                    <em style="font-size: 150px;">이것은 상속이다</em>
+                </span></p>
+            </details>
+        </article>
+        <article>
+            절
+            시간<time>09:00</time><br>
+            정도<meter value="0.8" max="1.0">80%</meter><br>
+            과정<progress value="2" max="10"></progress><br>
+        </article>
+        <article>
+            절
+        </article>
+    </section>
+    <aside>노트</aside>
+    <footer>꼬리말</footer>
+    <!-- textarea는 크기를 cols랑 rows로 조정함 -->
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>첫 타이틀</title>
+        <base href="">
+        <!-- base는 특정 링크 하위에 있는것을 이용하겠다는 뜻이다. -->
+    </head>
+    <body>
+        <img title="여기에 손올리면 글자뜸" src="images.jpeg" alt="베어루크티">
+        <h1>폰트크기 1</h1>
+        <h2>폰트크기 2</h2>
+        <h3>폰트크기 3</h3>
+        <h4>폰트크기 4</h4>
+        <h5>폰트크기 5</h5>
+        <h6>폰트크기 6</h6>
+        <p>
+            문단나누기
+        </p>
+        <p>
+            그거에 대한 증거
+        </p>
+        <hr>
+        <!-- hr은 줄쓰기 -->
+        <br>
+        <!-- br은 줄바꾸기 -->
+        <b>진하게</b><br>
+        <strong>중요한</strong><br>
+        <em>강조</em><br>
+        <i>이탤릭으로 강조</i><br>
+        <b><i>진하게 이탤릭으로 강조</i></b><br>
+        보통문자<small>한 단계 작은문자</small><br>
+        <del>삭제</del><br>
+        <ins>추가</ins><br>
+        보통문자의<sup>윗첨자</sup><br>
+        보통문자의<sub>아래첨자</sub><br>
+        <mark>하이라이팅</mark><br>
+        <div style="background-color: salmon; padding: 20px;">
+            패딩은 여백을 style는 css쓰게 해주는 것
+            background-color은 배경 색
+            <span style="color: blue;">color는 글자 색span은 특정 구획 표시</span>
+        </div>
+        <a href="https://www.youtube.com/?app=desktop&hl=ko&gl=KR">링크를 거는법</a>
+        <ol type="A">
+            <li>
+                A타입으로 순서를 나열한것이며 1,A,a,I,i가 있다
+            </li>
+            <li>
+                이건 앞에 번호가 있음
+            </li>
+        </ol>
+        <ul>
+            <li>
+                이건 앞에 순서가 안써져 있음
+            </li>
+        </ul>
+        <dl>
+            <dt>dl은 정의리스트</dt>
+            <dd>
+                dd는 내용을 dt는 이름을을
+            </dd>
+        </dl>
+        <table border="1">
+            <caption>제목이고 table은 표만들기 border는 테두리 크기기 tr은 열</caption>
+            <thead>
+                <tr><th>th는 강조</th><td>td는 그냥</td></tr>
+                <tr><th colspan="2">colspan은 가로</th></tr>
+                <tr><th rowspan="2">rowspan은 세로</th><th>빈칸</th></tr>
+                <tr><th>빈칸</th></tr>
+            </thead>
+        </table>
+        <a href=“#chap1”>해당아이디를 가진 칸으로</a>
+        <a id="chap1" href="2.png" download>다운로드 하는법</a>
+        <br>
+        <iframe src="Exam 6-17.html">이것은 다른 html을 띄우는 곳</iframe>
+        <iframe src="Exam 6-17.html" srcdoc="<html><head></head><body>hello</body></html>">
+            직접 만들기도 가능함 srcdoc이 있으면 src 무시시
+        </iframe>
+        <!-- upper,lower,left,right는 찾아보자 프레임 위치 변경이다다 -->
+        <!-- target은 _blank,_self,_parent,_top이 있고 어디서 생성할지에 따라 골라 쓰면 됨 -->
+        <!-- <video src="링크" width="폭" height="높이" controls autoplay muted loop 설정></video>  -->
+        <!-- <audio src="링크" controls ><source src="fldzm" 대체한다></audio> -->
+    </body>
+</html>
