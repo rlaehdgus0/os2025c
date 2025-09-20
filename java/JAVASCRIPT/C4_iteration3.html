@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const actors = "홍길동일지매임꺽정";
+        let name = ""
+        for(let x of actors){
+            name += x;
+            if(name.length == 3){
+                document.write(name + '<br>');
+                name = ""
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function sum(start, end, callback) {
+            let result = 0;
+            for(let i = start; i <= end; i++){
+                if(i%2==0){
+                    result += i;
+                }
+                
+            }
+            callback(result);
+        }
+
+        sum(1, 10, function(result){
+            document.write(`1부터 10까지의 짝수의 합: ` + result);
+        })
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
