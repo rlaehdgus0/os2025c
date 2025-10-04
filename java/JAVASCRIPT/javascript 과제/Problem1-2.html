@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var cs1 = false,cs2 = false;
+        function showing(obj,x){
+            if(x=='firstans'){
+                if(cs1){
+                    document.getElementById(`${x}`).style.visibility = "hidden";
+                    document.getElementById(`${x}`).innerHTML = ``
+                    obj.innerHTML = "답보가";
+                    cs1 = false;
+                }
+                else{
+                    document.getElementById(`${x}`).style.visibility = "visible";
+                    obj.innerHTML = "답닫기";
+                    document.getElementById(`${x}`).innerHTML = `<br>백설공주`
+                    cs1 = true;
+                }
+            }    
+            else{
+                if(cs2){
+                    document.getElementById(`${x}`).style.visibility = "hidden";
+                    obj.innerHTML = "답보기";
+                    document.getElementById(`${x}`).innerHTML = ``
+                    cs2 = false;
+                }
+                else{
+                    document.getElementById(`${x}`).style.visibility = "visible";
+                    obj.innerHTML = "답닫기";
+                    document.getElementById(`${x}`).innerHTML = `<br>둘다`
+                    cs2 = true;
+                }
+            }
+            
+        }
+    </script>
+</head>
+<body>
+    <h3>정답의 동적 삽입</h3>
+    <hr>
+    <div>Q. 거울아 거울아 세상에서 누가 제일 예쁘니?</div>
+    <button onclick="showing(this,'firstans')">답보기</button>
+    <div id = "firstans" style="visibility:hidden;"></div>
+    <div>Q. 죽느냐 사느냐 어떤 것이 문제인가?</div>
+    <button onclick="showing(this,'secondans')">답보기</button>
+    <div id = "secondans" style="visibility:hidden;"></div>
+</body>
+</html>

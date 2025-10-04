@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var an = 90
+        function Ro(obj){
+            obj.style.transform = `rotate(${an}deg)`;
+            an += 90
+            an %= 360
+        }
+    </script>
+</head>
+<body>
+    <h3>클릭하면 90도 회전합니다</h3>
+    <hr>
+    <img src="spo.png" alt="spo" onclick=Ro(this)>
+</body>
+</html>

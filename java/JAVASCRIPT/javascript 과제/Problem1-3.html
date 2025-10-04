@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            background-color: black;
+            color: white;
+            width: 300px;
+            padding: 10px;
+            margin-top: 10px;
+        }
+    </style>
+    
+</head>
+<body>
+    <h1></h1>
+    <script>
+        function fac(){
+            var a = 5,ans=1;
+            for (let i = 1; i<=a; i++){
+                ans *= i;
+            }
+            document.querySelector('h1').innerHTML = `${a}팩토리얼: ${ans}`;
+        }
+        fac();
+    </script>
+</body>
+</html>

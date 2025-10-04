@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            width: 270px;
+            height: 120px;
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', ()=>{
+            let st = false
+            const div = document.querySelector('#ha')
+            const con = document.querySelector('#con')
+            const dcon = document.querySelector('#dcon')
+
+            const pic = (event) => {
+                document.querySelector('#sta').innerHTML = `<b>이벤트 연결 상태: 해제</b>`
+            }
+            con.addEventListener('click',() => {
+                if(st==false){
+                    div.addEventListener('click',pic)
+                    div.innerHTML = '<img src="atuem.PNG" alt="">'
+                    st=true
+                    document.querySelector('#sta').innerHTML = `<b>이벤트 연결 상태: 연결</b>`
+                }
+            })
+
+            dcon.addEventListener('click',() => {
+                if(st==true){
+                    div.removeEventListener('click', pic)
+                    div.innerHTML = '<b>아래 버튼을 누르시오</b>'
+                    st=false
+                    document.querySelector('#sta').innerHTML = `<b>이벤트 연결 상태: 해제</b>`
+                }
+            })
+        })
+    </script>
+</head>
+<body>
+    <div style="width: 300px; height: 200px; box-shadow:3px 3px 3px black; padding:1px;">
+        <div id="ha" style="margin-left: 15px; width:90%; height: 60%; text-align: center; outline: 2px solid black;">
+            
+        </div>
+        <button id="con" style="margin-top: 5px; margin-left: 12px; width: 42%; height: 17%;">이벤트 연결</button>
+        <button id="dcon" style="margin-top: 5px; margin-left: 20px; width: 42%; height: 17%;">이벤트 제거</button>
+        <div id="sta" style=" margin-top: 5px; margin-left: 15px; width: 90%; height: 12%; text-align: center; outline: 1px solid black;"><b>이벤트 연결 상태: 해제</b></div>
+    </div>
+</body>
+</html>
